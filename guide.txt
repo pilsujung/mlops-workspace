@@ -1,5 +1,1 @@
-1. docker-compose.yaml  copy & paste
-2. docker compose up -d (logs, plugins directories are created)
-3. docker compose down -v
-4. chmod -R 777 logs dags plugins
-5. docker compose up -d
+1. docker compose up -d
