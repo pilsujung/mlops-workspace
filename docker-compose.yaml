@@ -38,15 +38,15 @@
 #
 # Feel free to modify this file to suit your needs.
 ---
-version: '3'
 x-airflow-common:
   &airflow-common
   # In order to add custom dependencies or upgrade provider packages you can use your extended image.
   # Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml
   # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
 
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.4.1}
-  # build: .
+  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.8.3-python3.9}
+  user: "${AIRFLOW_UID}:0"
+  build: .
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
@@ -55,15 +55,15 @@ x-airflow-common:
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
-    AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
-      #    _PIP_ADDITIONAL_REQUIREMENTS: 'mlflow==1.29.0'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      # _PIP_ADDITIONAL_REQUIREMENTS: 'mlflow==1.29.0'
   volumes:
-    - airflow-dags:/opt/airflow/dags
-    - airflow-logs:/opt/airflow/logs
-    - airflow-plugins:/opt/airflow/plugins
-      #- ./dags:/opt/airflow/dags
-      #    - ./logs:/opt/airflow/logs
-      #    - ./plugins:/opt/airflow/plugins
+    #    - airflow-dags:/opt/airflow/dags
+    #    - airflow-logs:/opt/airflow/logs
+    #    - airflow-plugins:/opt/airflow/plugins
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
   depends_on:
     redis:
       condition: service_healthy
@@ -129,7 +129,7 @@ services:
 
   airflow-init:
     <<: *airflow-common
-    entrypoint: /bin/bash
+      #    entrypoint: /bin/bash
     command:
     - -c
     - |
@@ -162,6 +162,6 @@ services:
 
 volumes:
   postgres-db-volume:
-  airflow-dags:
-  airflow-logs:
-  airflow-plugins:
+    #  airflow-dags:
+    #  airflow-logs:
+    #  airflow-plugins:

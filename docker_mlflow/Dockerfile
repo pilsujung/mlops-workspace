@@ -1,4 +1,6 @@
-FROM python:3.7
+FROM python:3.9
+
+RUN python -m pip install --upgrade pip && pip install mlflow==2.9.2
 
 # Create app directory
 WORKDIR /app
