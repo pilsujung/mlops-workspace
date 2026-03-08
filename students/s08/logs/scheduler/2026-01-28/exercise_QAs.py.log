@@ -1,0 +1,26 @@
+[2026-01-28T07:59:13.169+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:13.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_QAs.py for tasks to queue
+[2026-01-28T07:59:13.170+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:13.170+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:14.516+0000] {logging_mixin.py:188} WARNING - 2026/01/28 07:59:14 INFO mlflow.tracking.fluent: Experiment with name 'basic_exp' does not exist. Creating a new experiment.
+[2026-01-28T07:59:14.630+0000] {processor.py:840} INFO - DAG(s) 'ExampleDAG' retrieved from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:14.695+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.694+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ExampleDAG
+[2026-01-28T07:59:14.699+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.699+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ExampleDAG
+[2026-01-28T07:59:14.702+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.702+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ExampleDAG
+[2026-01-28T07:59:14.702+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.702+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-28T07:59:14.708+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.708+0000] {dag.py:3069} INFO - Creating ORM DAG for ExampleDAG
+[2026-01-28T07:59:14.714+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:14.714+0000] {dag.py:3834} INFO - Setting next_dagrun for ExampleDAG to 2026-01-26 18:00:00+00:00, run_after=2026-01-27 18:00:00+00:00
+[2026-01-28T07:59:14.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_QAs.py took 1.554 seconds
+[2026-01-28T07:59:44.843+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:44.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_QAs.py for tasks to queue
+[2026-01-28T07:59:44.845+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:44.845+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:45.628+0000] {processor.py:840} INFO - DAG(s) 'ExampleDAG' retrieved from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T07:59:45.642+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:45.642+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-28T07:59:45.655+0000] {logging_mixin.py:188} INFO - [2026-01-28T07:59:45.655+0000] {dag.py:3834} INFO - Setting next_dagrun for ExampleDAG to 2026-01-26 18:00:00+00:00, run_after=2026-01-27 18:00:00+00:00
+[2026-01-28T07:59:45.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_QAs.py took 0.821 seconds
+[2026-01-28T08:00:15.780+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T08:00:15.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_QAs.py for tasks to queue
+[2026-01-28T08:00:15.782+0000] {logging_mixin.py:188} INFO - [2026-01-28T08:00:15.782+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T08:00:16.532+0000] {processor.py:840} INFO - DAG(s) 'ExampleDAG' retrieved from /opt/airflow/dags/exercise_QAs.py
+[2026-01-28T08:00:16.545+0000] {logging_mixin.py:188} INFO - [2026-01-28T08:00:16.545+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-28T08:00:16.557+0000] {logging_mixin.py:188} INFO - [2026-01-28T08:00:16.557+0000] {dag.py:3834} INFO - Setting next_dagrun for ExampleDAG to 2026-01-26 18:00:00+00:00, run_after=2026-01-27 18:00:00+00:00
+[2026-01-28T08:00:16.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_QAs.py took 0.787 seconds

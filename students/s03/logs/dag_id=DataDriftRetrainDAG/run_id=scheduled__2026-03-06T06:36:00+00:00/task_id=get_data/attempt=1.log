@@ -1,0 +1,19 @@
+[2026-03-06T06:38:01.676+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DataDriftRetrainDAG.get_data scheduled__2026-03-06T06:36:00+00:00 [queued]>
+[2026-03-06T06:38:01.682+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DataDriftRetrainDAG.get_data scheduled__2026-03-06T06:36:00+00:00 [queued]>
+[2026-03-06T06:38:01.682+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2026-03-06T06:38:01.692+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_data> on 2026-03-06 06:36:00+00:00
+[2026-03-06T06:38:01.699+0000] {standard_task_runner.py:60} INFO - Started process 1487 to run task
+[2026-03-06T06:38:01.701+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DataDriftRetrainDAG', 'get_data', 'scheduled__2026-03-06T06:36:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/exercise_drift.py', '--cfg-path', '/tmp/tmprq8z1zg4']
+[2026-03-06T06:38:01.702+0000] {standard_task_runner.py:88} INFO - Job 31: Subtask get_data
+[2026-03-06T06:38:01.710+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-03-06T06:38:01.737+0000] {task_command.py:423} INFO - Running <TaskInstance: DataDriftRetrainDAG.get_data scheduled__2026-03-06T06:36:00+00:00 [running]> on host bd6b5fa44ec1
+[2026-03-06T06:38:01.790+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DataDriftRetrainDAG' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-06T06:36:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-06T06:36:00+00:00'
+[2026-03-06T06:38:01.795+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/context.py:315: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2026-03-06T06:38:01.799+0000] {python.py:202} INFO - Done. Returned value was: ./iris_drift.csv
+[2026-03-06T06:38:01.815+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=DataDriftRetrainDAG, task_id=get_data, execution_date=20260306T063600, start_date=20260306T063801, end_date=20260306T063801
+[2026-03-06T06:38:01.873+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-06T06:38:01.892+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

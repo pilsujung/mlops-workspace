@@ -1,0 +1,34 @@
+[2026-01-28T02:07:58.518+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DataDriftRetrainDAG.detect_drift manual__2026-01-28T02:07:55.775964+00:00 [queued]>
+[2026-01-28T02:07:58.522+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DataDriftRetrainDAG.detect_drift manual__2026-01-28T02:07:55.775964+00:00 [queued]>
+[2026-01-28T02:07:58.522+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2026-01-28T02:07:58.528+0000] {taskinstance.py:2217} INFO - Executing <Task(BranchPythonOperator): detect_drift> on 2026-01-28 02:07:55.775964+00:00
+[2026-01-28T02:07:58.534+0000] {standard_task_runner.py:60} INFO - Started process 1124 to run task
+[2026-01-28T02:07:58.536+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DataDriftRetrainDAG', 'detect_drift', 'manual__2026-01-28T02:07:55.775964+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/example_drift.py', '--cfg-path', '/tmp/tmpd0on2uox']
+[2026-01-28T02:07:58.537+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask detect_drift
+[2026-01-28T02:07:58.544+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-01-28T02:07:58.565+0000] {task_command.py:423} INFO - Running <TaskInstance: DataDriftRetrainDAG.detect_drift manual__2026-01-28T02:07:55.775964+00:00 [running]> on host f59c28b2edea
+[2026-01-28T02:07:58.606+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DataDriftRetrainDAG' AIRFLOW_CTX_TASK_ID='detect_drift' AIRFLOW_CTX_EXECUTION_DATE='2026-01-28T02:07:55.775964+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-28T02:07:55.775964+00:00'
+[2026-01-28T02:07:58.620+0000] {logging_mixin.py:188} INFO - PSI scores: {'sepal length (cm)': 0.0, 'sepal width (cm)': 0.0, 'petal length (cm)': 0.0, 'petal width (cm)': 0.0}
+[2026-01-28T02:07:58.620+0000] {logging_mixin.py:188} INFO - AVG PSI: 0.0
+[2026-01-28T02:07:58.620+0000] {python.py:202} INFO - Done. Returned value was: no_train
+[2026-01-28T02:07:58.620+0000] {branch.py:35} INFO - Branch into no_train
+[2026-01-28T02:07:58.620+0000] {skipmixin.py:178} INFO - Following branch no_train
+[2026-01-28T02:07:58.625+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 234, in execute
+    return self.do_branch(context, super().execute(context))
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/branch.py", line 36, in do_branch
+    self.skip_all_except(context["ti"], branches_to_execute)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/skipmixin.py", line 213, in skip_all_except
+    raise AirflowException(
+airflow.exceptions.AirflowException: 'branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'no_train'}.
+[2026-01-28T02:07:58.626+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=DataDriftRetrainDAG, task_id=detect_drift, execution_date=20260128T020755, start_date=20260128T020758, end_date=20260128T020758
+[2026-01-28T02:07:58.632+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task detect_drift ('branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'no_train'}.; 1124)
+[2026-01-28T02:07:58.667+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-28T02:07:58.683+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

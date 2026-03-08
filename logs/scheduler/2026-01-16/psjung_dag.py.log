@@ -1,0 +1,253 @@
+[2026-01-16T06:28:49.885+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:28:49.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:28:49.886+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:49.886+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:28:51.490+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:28:51 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:28:51.508+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:28:51.637+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.637+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:28:51.642+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.641+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:28:51.644+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.644+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:28:51.645+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.644+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:28:51.751+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.751+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:28:51.757+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:28:51.757+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:28:51.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.883 seconds
+[2026-01-16T06:29:52.200+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:29:52.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:29:52.202+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:52.201+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:29:53.585+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:29:53 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:29:53.606+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:29:53.739+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.738+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:29:53.744+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.744+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:29:53.747+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.746+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:29:53.747+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.747+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:29:53.863+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.863+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:29:53.869+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:29:53.869+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:29:53.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.679 seconds
+[2026-01-16T06:30:24.018+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:24.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:30:24.020+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:24.020+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:24.779+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:24.793+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:24.793+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:30:24.805+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:24.805+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:30:24.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.798 seconds
+[2026-01-16T06:30:54.934+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:54.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:30:54.936+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:54.936+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:55.701+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:30:55.713+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:55.713+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:30:55.725+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:30:55.725+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:30:55.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.801 seconds
+[2026-01-16T06:31:25.839+0000] {processor.py:161} INFO - Started process (PID=153) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:25.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:31:25.840+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:25.840+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:26.603+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:26.616+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:26.615+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:31:26.628+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:26.627+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:31:26.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.799 seconds
+[2026-01-16T06:31:56.735+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:56.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:31:56.737+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:56.736+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:57.497+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:31:57.510+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:57.510+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:31:57.522+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:31:57.522+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:31:57.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.797 seconds
+[2026-01-16T06:32:45.127+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:32:45.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:32:45.128+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:45.128+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:32:46.553+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:32:46 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:32:46.570+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:32:46.701+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.701+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:32:46.706+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.706+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:32:46.709+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.709+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:32:46.709+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.709+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:32:46.826+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.826+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:32:46.833+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:32:46.833+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:32:46.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.716 seconds
+[2026-01-16T06:33:16.968+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:33:16.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:33:16.970+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:33:16.970+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:33:17.740+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:33:17.753+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:33:17.752+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:33:17.764+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:33:17.764+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:33:17.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.806 seconds
+[2026-01-16T06:36:55.883+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:36:55.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:36:55.885+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:55.885+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:36:57.310+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:36:57 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:36:57.333+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:36:57.466+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.466+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:36:57.471+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.471+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:36:57.473+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.473+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:36:57.474+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.474+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:36:57.589+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.589+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:36:57.595+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:36:57.595+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:36:57.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.721 seconds
+[2026-01-16T06:37:27.726+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:27.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:37:27.728+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:27.727+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:28.485+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:28.499+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:28.499+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:37:28.511+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:28.511+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:37:28.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.796 seconds
+[2026-01-16T06:37:58.651+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:58.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:37:58.653+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:58.653+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:59.420+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:37:59.433+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:59.433+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:37:59.445+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:37:59.445+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:37:59.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.804 seconds
+[2026-01-16T06:38:29.557+0000] {processor.py:161} INFO - Started process (PID=153) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:38:29.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:38:29.559+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:29.559+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:38:30.322+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:38:30.335+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:30.335+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:38:30.347+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:30.347+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:38:30.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.800 seconds
+[2026-01-16T06:38:36.029+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:38:36.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:38:36.031+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:36.030+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:38:37.429+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:37.429+0000] {connectionpool.py:824} WARNING - Retrying (JitteredRetry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f77a64adac0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=new_exp
+[2026-01-16T06:38:41.436+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:41.435+0000] {connectionpool.py:824} WARNING - Retrying (JitteredRetry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f77a6452610>: Failed to establish a new connection: [Errno -2] Name or service not known')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=new_exp
+[2026-01-16T06:38:49.452+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:38:49.450+0000] {connectionpool.py:824} WARNING - Retrying (JitteredRetry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f77a6452310>: Failed to establish a new connection: [Errno -2] Name or service not known')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=new_exp
+[2026-01-16T06:39:00.455+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:00.456+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:39:00.457+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:00.457+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:01.215+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:01.228+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:01.228+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:39:01.240+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:01.239+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:39:01.247+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.794 seconds
+[2026-01-16T06:39:31.376+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:31.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:39:31.378+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:31.378+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:32.126+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:39:32.140+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:32.140+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:39:32.152+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:39:32.152+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:39:32.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.786 seconds
+[2026-01-16T06:40:00.316+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:00.316+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:40:00.318+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:00.317+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:01.707+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:40:01 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:40:01.722+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:01.851+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.850+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:40:01.856+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.855+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:40:01.858+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.858+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:40:01.859+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.858+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:40:01.967+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.967+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:40:01.973+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:01.973+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:40:01.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.667 seconds
+[2026-01-16T06:40:02.277+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:02.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:40:02.279+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:02.278+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:03.081+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:03.095+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:03.095+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:40:03.106+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:03.106+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:40:03.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.840 seconds
+[2026-01-16T06:40:32.098+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:32.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:40:32.099+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:32.099+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:32.861+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:32.875+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:32.875+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:40:32.887+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:32.886+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:40:32.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.799 seconds
+[2026-01-16T06:40:33.239+0000] {processor.py:161} INFO - Started process (PID=285) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:33.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:40:33.241+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:33.240+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:34.007+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:40:34.019+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:34.019+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:40:34.031+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:40:34.031+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:40:34.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.802 seconds
+[2026-01-16T06:41:04.142+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:04.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:41:04.144+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:04.144+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:04.896+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:04.910+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:04.909+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:41:04.921+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:04.921+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:41:04.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.788 seconds
+[2026-01-16T06:41:35.036+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:35.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:41:35.038+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:35.037+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:35.794+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:41:35.807+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:35.807+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:41:35.819+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:41:35.819+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:41:35.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.793 seconds
+[2026-01-16T06:42:05.978+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:05.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:42:05.980+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:05.980+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:06.736+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:06.749+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:06.749+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:42:06.761+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:06.761+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:42:06.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.794 seconds
+[2026-01-16T06:42:36.903+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:36.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:42:36.905+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:36.905+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:37.686+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:37.699+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:37.699+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:42:37.712+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:37.712+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:42:37.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.819 seconds
+[2026-01-16T06:42:55.222+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:55.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:42:55.224+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:55.224+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:56.651+0000] {logging_mixin.py:188} WARNING - 2026/01/16 06:42:56 INFO mlflow.tracking.fluent: Experiment with name 'new_exp' does not exist. Creating a new experiment.
+[2026-01-16T06:42:56.669+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:42:56.797+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.797+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:ModelDevelop
+[2026-01-16T06:42:56.802+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.802+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:ModelDevelop
+[2026-01-16T06:42:56.805+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.804+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:ModelDevelop
+[2026-01-16T06:42:56.805+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.805+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:42:56.921+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.921+0000] {dag.py:3069} INFO - Creating ORM DAG for ModelDevelop
+[2026-01-16T06:42:56.927+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:42:56.927+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:42:56.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 1.714 seconds
+[2026-01-16T06:43:07.825+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:07.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:43:07.827+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:07.827+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:08.582+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:08.596+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:08.596+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:43:08.608+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:08.608+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:43:08.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.793 seconds
+[2026-01-16T06:43:27.068+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:27.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:43:27.070+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:27.070+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:27.854+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:27.868+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:27.868+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:43:27.880+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:27.880+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:43:27.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.822 seconds
+[2026-01-16T06:43:38.730+0000] {processor.py:161} INFO - Started process (PID=483) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:38.731+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:43:38.732+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:38.732+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:39.479+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:39.494+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:39.494+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:43:39.507+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:39.506+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:43:39.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.787 seconds
+[2026-01-16T06:43:58.009+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:58.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:43:58.010+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:58.010+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:58.769+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:43:58.784+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:58.783+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:43:58.795+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:43:58.795+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:43:58.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.797 seconds
+[2026-01-16T06:44:09.610+0000] {processor.py:161} INFO - Started process (PID=516) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:09.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:44:09.612+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:09.612+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:10.392+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:10.405+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:10.405+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:44:10.416+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:10.416+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:44:10.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.817 seconds
+[2026-01-16T06:44:28.917+0000] {processor.py:161} INFO - Started process (PID=153) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:28.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:44:28.919+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:28.919+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:29.666+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:29.678+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:29.678+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:44:29.690+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:29.690+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:44:29.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.783 seconds
+[2026-01-16T06:44:40.551+0000] {processor.py:161} INFO - Started process (PID=549) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:40.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:44:40.553+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:40.552+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:41.334+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:41.346+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:41.346+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:44:41.359+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:41.359+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:44:41.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.818 seconds
+[2026-01-16T06:44:59.807+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:44:59.808+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/psjung_dag.py for tasks to queue
+[2026-01-16T06:44:59.809+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:44:59.808+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:45:00.641+0000] {processor.py:840} INFO - DAG(s) 'ModelDevelop' retrieved from /opt/airflow/dags/psjung_dag.py
+[2026-01-16T06:45:00.655+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:45:00.655+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-01-16T06:45:00.669+0000] {logging_mixin.py:188} INFO - [2026-01-16T06:45:00.669+0000] {dag.py:3834} INFO - Setting next_dagrun for ModelDevelop to 2026-01-02 01:00:00+00:00, run_after=2026-01-02 02:00:00+00:00
+[2026-01-16T06:45:00.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/psjung_dag.py took 0.873 seconds

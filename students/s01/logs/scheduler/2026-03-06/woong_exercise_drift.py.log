@@ -1,0 +1,144 @@
+[2026-03-06T06:15:32.897+0000] {processor.py:161} INFO - Started process (PID=7776) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:15:32.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:15:32.899+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:32.899+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:15:33.674+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:15:33.731+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.731+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:WoongDataDriftRetrainDAG
+[2026-03-06T06:15:33.736+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.736+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:WoongDataDriftRetrainDAG
+[2026-03-06T06:15:33.739+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.738+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:WoongDataDriftRetrainDAG
+[2026-03-06T06:15:33.739+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.739+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:15:33.846+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.846+0000] {dag.py:3069} INFO - Creating ORM DAG for WoongDataDriftRetrainDAG
+[2026-03-06T06:15:33.853+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:15:33.853+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:12:00+00:00, run_after=2026-03-06 06:14:00+00:00
+[2026-03-06T06:15:33.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.965 seconds
+[2026-03-06T06:16:03.943+0000] {processor.py:161} INFO - Started process (PID=7908) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:03.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:16:03.944+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:03.944+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:04.726+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:04.843+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:04.843+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:16:04.857+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:04.857+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:14:00+00:00, run_after=2026-03-06 06:16:00+00:00
+[2026-03-06T06:16:04.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.925 seconds
+[2026-03-06T06:16:35.658+0000] {processor.py:161} INFO - Started process (PID=8040) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:35.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:16:35.660+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:35.659+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:36.416+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:16:36.429+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:36.429+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:16:36.442+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:16:36.442+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:14:00+00:00, run_after=2026-03-06 06:16:00+00:00
+[2026-03-06T06:16:36.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.890 seconds
+[2026-03-06T06:17:06.854+0000] {processor.py:161} INFO - Started process (PID=8172) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:06.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:17:06.856+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:06.856+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:07.637+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:07.652+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:07.651+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:17:07.665+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:07.664+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:14:00+00:00, run_after=2026-03-06 06:16:00+00:00
+[2026-03-06T06:17:07.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.820 seconds
+[2026-03-06T06:17:37.706+0000] {processor.py:161} INFO - Started process (PID=8304) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:37.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:17:37.708+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:37.708+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:38.476+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:17:38.491+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:38.490+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:17:38.504+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:17:38.504+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:14:00+00:00, run_after=2026-03-06 06:16:00+00:00
+[2026-03-06T06:17:38.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.809 seconds
+[2026-03-06T06:18:08.852+0000] {processor.py:161} INFO - Started process (PID=8436) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:08.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:18:08.854+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:08.853+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:09.617+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:09.631+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:09.631+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:18:09.750+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:09.750+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:16:00+00:00, run_after=2026-03-06 06:18:00+00:00
+[2026-03-06T06:18:09.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.909 seconds
+[2026-03-06T06:18:39.838+0000] {processor.py:161} INFO - Started process (PID=8568) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:39.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:18:39.839+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:39.839+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:40.621+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:18:40.635+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:40.635+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:18:40.648+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:18:40.648+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:16:00+00:00, run_after=2026-03-06 06:18:00+00:00
+[2026-03-06T06:18:40.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.820 seconds
+[2026-03-06T06:19:10.734+0000] {processor.py:161} INFO - Started process (PID=8700) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:10.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:19:10.736+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:10.736+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:11.578+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:11.592+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:11.591+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:19:11.605+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:11.605+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:16:00+00:00, run_after=2026-03-06 06:18:00+00:00
+[2026-03-06T06:19:11.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.881 seconds
+[2026-03-06T06:19:41.714+0000] {processor.py:161} INFO - Started process (PID=8832) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:41.714+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:19:41.715+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:41.715+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:42.477+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:19:42.490+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:42.490+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:19:42.503+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:19:42.503+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:16:00+00:00, run_after=2026-03-06 06:18:00+00:00
+[2026-03-06T06:19:42.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.799 seconds
+[2026-03-06T06:20:12.688+0000] {processor.py:161} INFO - Started process (PID=8964) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:12.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:20:12.689+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:12.689+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:13.422+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:13.437+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:13.436+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:20:13.450+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:13.449+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:18:00+00:00, run_after=2026-03-06 06:20:00+00:00
+[2026-03-06T06:20:13.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.773 seconds
+[2026-03-06T06:20:43.926+0000] {processor.py:161} INFO - Started process (PID=9096) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:43.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:20:43.927+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:43.927+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:44.704+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:20:44.718+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:44.718+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:20:44.732+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:20:44.731+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:18:00+00:00, run_after=2026-03-06 06:20:00+00:00
+[2026-03-06T06:20:44.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.816 seconds
+[2026-03-06T06:21:14.781+0000] {processor.py:161} INFO - Started process (PID=9228) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:14.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:21:14.782+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:14.782+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:15.527+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:15.541+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:15.541+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:21:15.554+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:15.554+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:18:00+00:00, run_after=2026-03-06 06:20:00+00:00
+[2026-03-06T06:21:15.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.784 seconds
+[2026-03-06T06:21:45.793+0000] {processor.py:161} INFO - Started process (PID=9360) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:45.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:21:45.795+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:45.794+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:46.664+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:21:46.678+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:46.677+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:21:46.691+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:21:46.691+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:18:00+00:00, run_after=2026-03-06 06:20:00+00:00
+[2026-03-06T06:21:46.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.908 seconds
+[2026-03-06T06:22:16.773+0000] {processor.py:161} INFO - Started process (PID=9492) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:16.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:22:16.774+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:16.774+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:17.544+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:17.658+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:17.657+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:22:17.671+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:17.671+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:20:00+00:00, run_after=2026-03-06 06:22:00+00:00
+[2026-03-06T06:22:17.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.909 seconds
+[2026-03-06T06:22:47.779+0000] {processor.py:161} INFO - Started process (PID=9624) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:47.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:22:47.780+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:47.780+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:48.554+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:22:48.568+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:48.568+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:22:48.581+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:22:48.581+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:20:00+00:00, run_after=2026-03-06 06:22:00+00:00
+[2026-03-06T06:22:48.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.915 seconds
+[2026-03-06T06:23:18.859+0000] {processor.py:161} INFO - Started process (PID=9756) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:18.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:23:18.861+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:18.861+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:19.718+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:19.732+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:19.732+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:23:19.745+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:19.745+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:20:00+00:00, run_after=2026-03-06 06:22:00+00:00
+[2026-03-06T06:23:19.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.896 seconds
+[2026-03-06T06:23:49.828+0000] {processor.py:161} INFO - Started process (PID=9888) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:49.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:23:49.830+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:49.830+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:50.608+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:23:50.622+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:50.622+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:23:50.635+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:23:50.635+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:20:00+00:00, run_after=2026-03-06 06:22:00+00:00
+[2026-03-06T06:23:50.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.818 seconds
+[2026-03-06T06:24:20.975+0000] {processor.py:161} INFO - Started process (PID=10020) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:20.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:24:20.977+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:20.977+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:21.847+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:21.860+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:21.860+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:24:21.874+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:21.874+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:22:00+00:00, run_after=2026-03-06 06:24:00+00:00
+[2026-03-06T06:24:21.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.909 seconds
+[2026-03-06T06:24:51.912+0000] {processor.py:161} INFO - Started process (PID=10152) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:51.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:24:51.913+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:51.913+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:52.792+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:24:52.807+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:52.807+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:24:52.822+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:24:52.822+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:22:00+00:00, run_after=2026-03-06 06:24:00+00:00
+[2026-03-06T06:24:52.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.921 seconds
+[2026-03-06T06:25:22.867+0000] {processor.py:161} INFO - Started process (PID=10284) to work on /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:25:22.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/woong_exercise_drift.py for tasks to queue
+[2026-03-06T06:25:22.868+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:25:22.868+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:25:23.769+0000] {processor.py:840} INFO - DAG(s) 'WoongDataDriftRetrainDAG' retrieved from /opt/airflow/dags/woong_exercise_drift.py
+[2026-03-06T06:25:23.782+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:25:23.781+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-06T06:25:23.797+0000] {logging_mixin.py:188} INFO - [2026-03-06T06:25:23.797+0000] {dag.py:3834} INFO - Setting next_dagrun for WoongDataDriftRetrainDAG to 2026-03-06 06:22:00+00:00, run_after=2026-03-06 06:24:00+00:00
+[2026-03-06T06:25:23.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/woong_exercise_drift.py took 0.943 seconds

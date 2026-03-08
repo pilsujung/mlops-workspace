@@ -1,0 +1,48 @@
+[2026-01-16T07:54:56.182+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-16T07:54:56.188+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-16T07:54:56.188+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2026-01-16T07:54:56.198+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_data> on 2026-01-06 06:00:00+00:00
+[2026-01-16T07:54:56.209+0000] {standard_task_runner.py:60} INFO - Started process 13378 to run task
+[2026-01-16T07:54:56.216+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ModelDevelop', 'get_data', 'scheduled__2026-01-06T06:00:00+00:00', '--job-id', '200', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmpvaayl3hm']
+[2026-01-16T07:54:56.217+0000] {standard_task_runner.py:88} INFO - Job 200: Subtask get_data
+[2026-01-16T07:54:56.259+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-01-16T07:54:56.296+0000] {task_command.py:423} INFO - Running <TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [running]> on host 8a4f043652f0
+[2026-01-16T07:54:56.402+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ModelDevelop' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2026-01-06T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-06T06:00:00+00:00'
+[2026-01-16T07:54:56.415+0000] {python.py:202} INFO - Done. Returned value was: ./iris.csv
+[2026-01-16T07:54:56.434+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=ModelDevelop, task_id=get_data, execution_date=20260106T060000, start_date=20260116T075456, end_date=20260116T075456
+[2026-01-16T07:54:56.465+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-16T07:54:56.507+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-17T13:18:30.223+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-17T13:18:30.228+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-17T13:18:30.229+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2026-01-17T13:18:30.237+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_data> on 2026-01-06 06:00:00+00:00
+[2026-01-17T13:18:30.244+0000] {standard_task_runner.py:60} INFO - Started process 13343 to run task
+[2026-01-17T13:18:30.247+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ModelDevelop', 'get_data', 'scheduled__2026-01-06T06:00:00+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmpuguo_2l3']
+[2026-01-17T13:18:30.248+0000] {standard_task_runner.py:88} INFO - Job 199: Subtask get_data
+[2026-01-17T13:18:30.257+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-01-17T13:18:30.320+0000] {task_command.py:423} INFO - Running <TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [running]> on host ed3184b6b543
+[2026-01-17T13:18:30.396+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ModelDevelop' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2026-01-06T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-06T06:00:00+00:00'
+[2026-01-17T13:18:30.407+0000] {python.py:202} INFO - Done. Returned value was: ./iris.csv
+[2026-01-17T13:18:30.431+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=ModelDevelop, task_id=get_data, execution_date=20260106T060000, start_date=20260117T131830, end_date=20260117T131830
+[2026-01-17T13:18:30.459+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-17T13:18:30.487+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-17T13:39:52.849+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-17T13:39:52.868+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [queued]>
+[2026-01-17T13:39:52.868+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2026-01-17T13:39:52.884+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_data> on 2026-01-06 06:00:00+00:00
+[2026-01-17T13:39:52.892+0000] {standard_task_runner.py:60} INFO - Started process 13445 to run task
+[2026-01-17T13:39:52.901+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ModelDevelop', 'get_data', 'scheduled__2026-01-06T06:00:00+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmp3zi8bpy8']
+[2026-01-17T13:39:52.902+0000] {standard_task_runner.py:88} INFO - Job 201: Subtask get_data
+[2026-01-17T13:39:52.917+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-01-17T13:39:52.944+0000] {task_command.py:423} INFO - Running <TaskInstance: ModelDevelop.get_data scheduled__2026-01-06T06:00:00+00:00 [running]> on host 5330652dc216
+[2026-01-17T13:39:53.009+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ModelDevelop' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2026-01-06T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-06T06:00:00+00:00'
+[2026-01-17T13:39:53.021+0000] {python.py:202} INFO - Done. Returned value was: ./iris.csv
+[2026-01-17T13:39:53.071+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=ModelDevelop, task_id=get_data, execution_date=20260106T060000, start_date=20260117T133952, end_date=20260117T133953
+[2026-01-17T13:39:53.110+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-17T13:39:53.147+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

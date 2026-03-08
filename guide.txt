@@ -1,0 +1,5 @@
+1. echo "AIRFLOW_UID=$(id -u)" > .env
+2. docker compose build
+3. docker compose --env-file .env.s01 -p s01 up -d
+
+- docker compose -p s01 down -v
