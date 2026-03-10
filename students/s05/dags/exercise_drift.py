@@ -35,19 +35,26 @@ dag = DAG(
     catchup=False,
 )
 
-REFERENCE_STATS_PATH = "./reference_stats.csv"
+TRAINING_DATASET_PATH = "./training_dataset.csv"
 
 # 1️⃣ 시간에 따라 분포가 바뀌는 데이터 생성
 def get_data(**context):
     X, y = load_iris(return_X_y=True, as_frame=True)
+    X.columns = [
+        "sepal_length",
+        "sepal_width",
+        "petal_length",
+        "petal_width"
+    ]
     df = pd.concat([X, y], axis="columns")
 
     run_id = context["dag_run"].run_id
 
+    # apply data distribution shift
     if "odd" in run_id or int(context["execution_date"].minute / 2) % 2 == 1:
-        df["sepal length (cm)"] += 15
-        df["petal length (cm)"] *= 6
-        df["sepal width (cm)"] = np.random.uniform(0, 15, len(df))
+        df["sepal_length"] += 15
+        df["petal_length"] *= 6
+        df["sepal_width"] = np.random.uniform(0, 15, len(df))
 
         df = df[df["target"] != 0]
 
@@ -60,7 +67,7 @@ def get_data(**context):
 
 # Data Drift 탐지
 def detect_drift(**context):
-    distribution_diff = 0
+    distribution_diff = 0.3
 
     # detect drift logic
     #
@@ -77,35 +84,100 @@ def detect_drift(**context):
 
 # 3️⃣ 모델 학습
 def train_fit(**context):
-    path = context["task_instance"].xcom_pull(task_ids="get_data")
+
+    path = context['task_instance'].xcom_pull(task_ids='get_data')
     df = pd.read_csv(path)
 
-    X = df.drop("target", axis=1)
+    # ==============================
+    # Dataset logging
+    # ==============================
+
+    dataset = mlflow.data.from_pandas(
+        df,
+        source=path,
+        name="iris_dataset"
+    )
+
+    # Preprocess
+    X = df.drop(["target"], axis="columns")
     y = df["target"]
 
     X_train, X_valid, y_train, y_valid = train_test_split(
-        X, y, train_size=0.8, random_state=2024
+        X, y,
+        train_size=0.8,
+        random_state=2024
     )
 
-    model = Pipeline([
+    # model develop
+    model_pipeline = Pipeline([
         ("scaler", StandardScaler()),
         ("svc", SVC())
     ])
 
-    model.fit(X_train, y_train)
-
-    train_acc = accuracy_score(y_train, model.predict(X_train))
-    valid_acc = accuracy_score(y_valid, model.predict(X_valid))
-
     with mlflow.start_run():
+
+        # ==============================
+        # Dataset 기록
+        # ==============================
+        mlflow.log_artifact(path)       # 학습 데이터 파일을 artifact로 기록
+        mlflow.log_input(dataset, context="training")
+
+        # ==============================
+        # Parameter 기록
+        # ==============================
+
+        mlflow.log_params({
+            "model_type": "SVC",
+            "train_size": 0.8,
+            "random_state": 2024
+        })
+
+        # ==============================
+        # Model training
+        # ==============================
+
+        model_pipeline.fit(X_train, y_train)
+
+        train_pred = model_pipeline.predict(X_train)
+        valid_pred = model_pipeline.predict(X_valid)
+
+        train_acc = accuracy_score(y_train, train_pred)
+        valid_acc = accuracy_score(y_valid, valid_pred)
+
+        print("Train Accuracy :", train_acc)
+        print("Valid Accuracy :", valid_acc)
+
+        # ==============================
+        # Metric 기록
+        # ==============================
+
         mlflow.log_metrics({
             "train_acc": train_acc,
             "valid_acc": valid_acc
         })
-        mlflow.sklearn.log_model(model, "sk_model")
 
-    X.to_csv(REFERENCE_STATS_PATH, index=False)
-    print("Retraining completed due to data drift")
+        # ==============================
+        # Model logging
+        # ==============================
+
+        # Model Serving 시 입력 검증을 하기 위한 코드 (입출력에 대한 signature를 자동으로 추출)
+        signature = mlflow.models.signature.infer_signature(
+            model_input=X_train,
+            model_output=train_pred
+        )
+
+        input_sample = X_train.iloc[:10]
+
+        mlflow.sklearn.log_model(
+            sk_model=model_pipeline,
+            artifact_path="sk_model",
+            signature=signature,
+            input_example=input_sample
+            # registered_model_name="sk_model"
+        )
+
+    X.to_csv(TRAINING_DATASET_PATH, index=False)
+
 
 # === Airflow Operators ===
 

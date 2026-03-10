@@ -59,42 +59,100 @@ def get_data(**context):
     
 # 2. model development and train 부분 함수 정의
 def train_fit(**context):
-    path = context['task_instance'].xcom_pull(task_ids = 'get_data')
+
+    path = context['task_instance'].xcom_pull(task_ids='get_data')
     df = pd.read_csv(path)
-    print(df)
-    
-    #Preprocess
+
+    # ==============================
+    # Dataset logging
+    # ==============================
+
+    dataset = mlflow.data.from_pandas(
+        df,
+        source=path,
+        name="iris_dataset"
+    )
+
+    # Preprocess
     X = df.drop(["target"], axis="columns")
     y = df["target"]
-    X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, random_state=2024)
-    
+
+    X_train, X_valid, y_train, y_valid = train_test_split(
+        X, y,
+        train_size=0.8,
+        random_state=2024
+    )
+
     # model develop
-    model_pipeline = Pipeline([("scaler", StandardScaler()), ("svc", SVC())])
-    model_pipeline.fit(X_train, y_train)
-    
-    train_pred = model_pipeline.predict(X_train)
-    valid_pred = model_pipeline.predict(X_valid)
-    
-    train_acc = accuracy_score(y_true = y_train, y_pred = train_pred)
-    valid_acc = accuracy_score(y_true = y_valid, y_pred = valid_pred)
-    
-    print("Train Accuracy :", train_acc)
-    print("Valid Accuracy :", valid_acc)
-    
-    #3. save model 
-    signature = mlflow.models.signature.infer_signature(model_input = X_train, model_output=train_pred)   # model serving 시, 입력데이터 검증. 잘못된 요청 사전 차단. 운영 단계 안전성 확보.
-    input_sample = X_train.iloc[:10]
+    model_pipeline = Pipeline([
+        ("scaler", StandardScaler()),
+        ("svc", SVC())
+    ])
+
     with mlflow.start_run():
-            mlflow.log_metrics({"train_acc":train_acc, "valid_acc": valid_acc})
-            mlflow.sklearn.log_model(
-                    sk_model = model_pipeline,
-                    artifact_path = "sk_model",
-                    signature = signature,
-                    input_example = input_sample,   # 모델 입력 예제. MLflow UI 및 REST API 문서에 표시됨
-       #             registered_model_name="sk_model"
-            )
-    print("****Success Message*******")    
+
+        # ==============================
+        # Dataset 기록
+        # ==============================
+        mlflow.log_artifact(path)       # 학습 데이터 파일을 artifact로 기록
+        mlflow.log_input(dataset, context="training")
+
+        # ==============================
+        # Parameter 기록
+        # ==============================
+
+        mlflow.log_params({
+            "model_type": "SVC",
+            "train_size": 0.8,
+            "random_state": 2024
+        })
+
+        # ==============================
+        # Model training
+        # ==============================
+
+        model_pipeline.fit(X_train, y_train)
+
+        train_pred = model_pipeline.predict(X_train)
+        valid_pred = model_pipeline.predict(X_valid)
+
+        train_acc = accuracy_score(y_train, train_pred)
+        valid_acc = accuracy_score(y_valid, valid_pred)
+
+        print("Train Accuracy :", train_acc)
+        print("Valid Accuracy :", valid_acc)
+
+        # ==============================
+        # Metric 기록
+        # ==============================
+
+        mlflow.log_metrics({
+            "train_acc": train_acc,
+            "valid_acc": valid_acc
+        })
+
+        # ==============================
+        # Model logging
+        # ==============================
         
+        # Model Serving 시 입력 검증을 하기 위한 코드 (입출력에 대한 signature를 자동으로 추출)
+        signature = mlflow.models.signature.infer_signature(
+            model_input=X_train,
+            model_output=train_pred
+        )
+
+        input_sample = X_train.iloc[:10]
+
+        mlflow.sklearn.log_model(
+            sk_model=model_pipeline,
+            artifact_path="sk_model",
+            signature=signature,
+            input_example=input_sample
+            # registered_model_name="sk_model"
+        )
+
+    print("****Success Message*******")
+
 #get_data taskInstance 설정
 get_data = PythonOperator(
         task_id = 'get_data',
