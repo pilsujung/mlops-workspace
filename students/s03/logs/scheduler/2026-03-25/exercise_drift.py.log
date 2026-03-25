@@ -1,0 +1,47 @@
+[2026-03-25T05:09:40.161+0000] {processor.py:161} INFO - Started process (PID=55) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:09:40.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:09:40.162+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:40.162+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:09:41.494+0000] {logging_mixin.py:188} WARNING - 2026/03/25 05:09:41 INFO mlflow.tracking.fluent: Experiment with name 'exercise_drift' does not exist. Creating a new experiment.
+[2026-03-25T05:09:41.510+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:09:41.640+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.639+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:DataDriftRetrainDAG
+[2026-03-25T05:09:41.644+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.644+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:DataDriftRetrainDAG
+[2026-03-25T05:09:41.647+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.647+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:DataDriftRetrainDAG
+[2026-03-25T05:09:41.647+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.647+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:09:41.654+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.654+0000] {dag.py:3069} INFO - Creating ORM DAG for DataDriftRetrainDAG
+[2026-03-25T05:09:41.661+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:09:41.661+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:06:00+00:00, run_after=2026-03-25 05:08:00+00:00
+[2026-03-25T05:09:41.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 1.510 seconds
+[2026-03-25T05:10:11.817+0000] {processor.py:161} INFO - Started process (PID=121) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:11.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:10:11.819+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:11.819+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:12.578+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:12.592+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:12.592+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:10:12.605+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:12.605+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:08:00+00:00, run_after=2026-03-25 05:10:00+00:00
+[2026-03-25T05:10:12.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 0.798 seconds
+[2026-03-25T05:10:42.793+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:42.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:10:42.795+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:42.795+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:43.540+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:10:43.554+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:43.553+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:10:43.567+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:10:43.567+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:08:00+00:00, run_after=2026-03-25 05:10:00+00:00
+[2026-03-25T05:10:43.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 0.783 seconds
+[2026-03-25T05:11:13.744+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:13.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:11:13.746+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:13.746+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:14.510+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:14.524+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:14.523+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:11:14.537+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:14.536+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:08:00+00:00, run_after=2026-03-25 05:10:00+00:00
+[2026-03-25T05:11:14.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 0.802 seconds
+[2026-03-25T05:11:44.721+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:44.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:11:44.723+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:44.723+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:45.474+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:11:45.489+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:45.488+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:11:45.502+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:11:45.502+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:08:00+00:00, run_after=2026-03-25 05:10:00+00:00
+[2026-03-25T05:11:45.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 0.792 seconds
+[2026-03-25T05:12:15.680+0000] {processor.py:161} INFO - Started process (PID=385) to work on /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:12:15.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exercise_drift.py for tasks to queue
+[2026-03-25T05:12:15.682+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:12:15.682+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:12:16.432+0000] {processor.py:840} INFO - DAG(s) 'DataDriftRetrainDAG' retrieved from /opt/airflow/dags/exercise_drift.py
+[2026-03-25T05:12:16.445+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:12:16.445+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-25T05:12:16.458+0000] {logging_mixin.py:188} INFO - [2026-03-25T05:12:16.458+0000] {dag.py:3834} INFO - Setting next_dagrun for DataDriftRetrainDAG to 2026-03-25 05:10:00+00:00, run_after=2026-03-25 05:12:00+00:00
+[2026-03-25T05:12:16.466+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exercise_drift.py took 0.787 seconds

@@ -1,0 +1,60 @@
+[2026-03-25T05:09:40.123+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2026-03-25T05:09:40.123+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-03-25T05:09:40.124+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-25T05:09:40.124+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-03-25T05:09:40.125+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-25T05:09:40.174+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/exercise_QAs.py       54  0.03s             0           0
+/opt/airflow/dags/exercise_drift.py     55  0.02s             0           0
+================================================================================
+[2026-03-25T05:10:10.269+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/exercise_QAs.py                             1           0  1.54s           2026-03-25T05:09:41
+/opt/airflow/dags/exercise_drift.py                           1           0  1.53s           2026-03-25T05:09:41
+================================================================================
+[2026-03-25T05:10:40.764+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/exercise_QAs.py                             1           0  0.87s           2026-03-25T05:10:12
+/opt/airflow/dags/exercise_drift.py                           1           0  0.82s           2026-03-25T05:10:12
+================================================================================
+[2026-03-25T05:11:11.713+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/exercise_QAs.py                             1           0  0.88s           2026-03-25T05:10:43
+/opt/airflow/dags/exercise_drift.py                           1           0  0.81s           2026-03-25T05:10:43
+================================================================================
+[2026-03-25T05:11:42.691+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/exercise_QAs.py                             1           0  0.85s           2026-03-25T05:11:14
+/opt/airflow/dags/exercise_drift.py                           1           0  0.83s           2026-03-25T05:11:14
+================================================================================
+[2026-03-25T05:12:13.649+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/exercise_QAs.py                             1           0  0.85s           2026-03-25T05:11:45
+/opt/airflow/dags/exercise_drift.py                           1           0  0.82s           2026-03-25T05:11:45
+================================================================================
+[2026-03-25T05:12:43.276+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
