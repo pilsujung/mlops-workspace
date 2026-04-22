@@ -17,7 +17,7 @@ from sklearn.svm import SVC
 from airflow.utils.dates import days_ago
 
 mlflow.set_tracking_uri("http://mlflow:600")
-mlflow.set_experiment("data_drift_exp")
+mlflow.set_experiment("DataDriftRetrainDAG_experiments_sol")
 
 local_tz = pendulum.timezone("Asia/Seoul")
 

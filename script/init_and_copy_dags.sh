@@ -11,15 +11,16 @@ for i in $(seq 1 40)
 do
     ID=$(printf "%02d" $i)
     TARGET_DIR="$BASE_DIR/s$ID/dags"
+    TARGET_LOGS="$BASE_DIR/s$ID/logs"
 
     echo "Processing $TARGET_DIR"
 
     # 디렉토리 생성
-    mkdir -p "$TARGET_DIR"
+    mkdir -p "$TARGET_DIR" "$TARGET_LOGS"
 
     # 파일 복사
-    cp ../sol/exercise_drift.py "$TARGET_DIR"/
-    cp ../sol/exercise_QAs.py "$TARGET_DIR"/
+    cp ../sol/DataDriftRetrainDAG.py "$TARGET_DIR"/
+    cp ../sol/ExampleDAG.py "$TARGET_DIR"/
     cp ../sol/iris.csv "$TARGET_DIR"/
 done
 
