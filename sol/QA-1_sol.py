@@ -212,7 +212,7 @@ get_data_task = PythonOperator(
     dag=dag,
 )
 
-detect_drift_task = BranchPythonOperator(
+detect_drift_task = BranchPythonOperator(  # return 값이 다음 task를 결정
     task_id="detect_drift",
     python_callable=detect_drift,
     dag=dag,
@@ -233,3 +233,6 @@ no_drift_task = EmptyOperator(
 get_data_task >> detect_drift_task
 detect_drift_task >> train_task
 detect_drift_task >> no_drift_task
+
+# get_data → detect_drift → train
+#                      ↘ no_drift
