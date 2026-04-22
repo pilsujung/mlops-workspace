@@ -67,10 +67,13 @@ def get_data(**context):
 
 # Data Drift 탐지
 def detect_drift(**context):
+    path = context['task_instance'].xcom_pull(task_ids='get_data')
+    df = pd.read_csv(path)  # 현재 데이터 셋
+
     distribution_diff = 0.3
 
     # detect drift logic
-    #
+    # 과거 데이터 셋과 현재 데이터셋 간 분포 비교
     #
     #
     #
@@ -84,7 +87,6 @@ def detect_drift(**context):
 
 # 3️⃣ 모델 학습
 def train_fit(**context):
-
     path = context['task_instance'].xcom_pull(task_ids='get_data')
     df = pd.read_csv(path)
 
