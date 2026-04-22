@@ -1,0 +1,14 @@
+(1) docker compose --env-file .env.s## -p s## up -d
+(2) docker compose -p s## down -v
+(3) docker exec -it s##-mlflow-1 bash
+(4) export MLFLOW_TRACKING_URI=http://127.0.0.1:600
+(5) mlflow models serve -m "models:/iris_classification/1" --host 0.0.0.0 --port 1234 --no-conda
+(6)
+curl -X POST http://localhost:170##/invocations   -H "Content-Type: application/json"   -d '{
+    "dataframe_split": {
+      "columns": ["sepal_length", "sepal_width", "petal_length", "petal_width"],
+      "data": [
+        [6.4, 3.2, 4.5, 1.5]
+      ]
+    }
+  }'

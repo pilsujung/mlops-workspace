@@ -12,6 +12,7 @@ do
     ID=$(printf "%02d" $i)
     TARGET_DIR="$BASE_DIR/s$ID/dags"
     TARGET_LOGS="$BASE_DIR/s$ID/logs"
+    TARGET_BASE="$BASE_DIR/s$ID"
 
     echo "Processing $TARGET_DIR"
 
@@ -22,6 +23,7 @@ do
     cp ../sol/DataDriftRetrainDAG.py "$TARGET_DIR"/
     cp ../sol/ExampleDAG.py "$TARGET_DIR"/
     cp ../sol/iris.csv "$TARGET_DIR"/
+    cp ../sol/Command.txt "$TARGET_BASE"/
 done
 
 echo "Done."
