@@ -89,7 +89,7 @@ def train_fit(**context):
         ("svc", SVC())
     ])
 
-    with mlflow.start_run():
+    with mlflow.start_run(run_name="baseline_model"):
 
         # ==============================
         # Dataset 기록

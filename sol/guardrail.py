@@ -1,6 +1,6 @@
 import csv
 import os
-
+import time
 
 class Guardrail:
 
@@ -94,13 +94,12 @@ class Guardrail:
 
         # 10초 이전 요청 제거
         self.request_times = [
-            t for t in self.request_times
-            if now - t < 10
+            t for t in self.request_times if now - t < 10
         ]
 
-        if len(self.request_times) >= 3:
+        if len(self.request_times) >= 3:  # 최근 10초 내 요청이 3회 이상이면 차단
             return False
 
-        self.request_times.append(now)
+        self.request_times.append(now)  # 현재 요청 시간 추가
 
         return True

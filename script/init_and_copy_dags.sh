@@ -12,12 +12,11 @@ do
     ID=$(printf "%02d" $i)
     TARGET_DIR="$BASE_DIR/s$ID/dags"
     TARGET_LOGS="$BASE_DIR/s$ID/logs"
+    TARGET_CLIENT="$BASE_DIR/s$ID/client"
     TARGET_BASE="$BASE_DIR/s$ID"
 
-    echo "Processing $TARGET_DIR"
-
     # 디렉토리 생성
-    mkdir -p "$TARGET_DIR" "$TARGET_LOGS"
+    mkdir -p "$TARGET_DIR" "$TARGET_LOGS" "$TARGET_CLIENT"
 
     # 파일 복사
     cp ../sol/DataDriftRetrainDAG.py "$TARGET_DIR"/
