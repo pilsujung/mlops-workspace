@@ -23,6 +23,7 @@ do
     cp ../sol/ExampleDAG.py "$TARGET_DIR"/
     cp ../sol/iris.csv "$TARGET_DIR"/
     cp ../sol/Command.txt "$TARGET_BASE"/
+    cp ../sol/client.py "$TARGET_CLIENT"
 done
 
 echo "Done."
